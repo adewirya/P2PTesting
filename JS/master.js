@@ -20,7 +20,7 @@ if (!roomId){
 const servers = {
     iceServers : [
         {
-            urls : ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302']
+            urls : ['stun:stun1.l.google.com:19302']
         }
     ]
 }
@@ -61,7 +61,6 @@ let initialize = async () =>{
 let handleMemberLeft = async (MemberId)=>{
     document.getElementById('user-2').style.display = 'none';
     document.getElementById('user-1').classList.remove('smallFrame');
-
 }
 
 let handleMessagesFromPeer = async (message, MemberId) => {
